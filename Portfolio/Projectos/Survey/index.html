@@ -1,0 +1,99 @@
+<!DOCTYPE html5>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cteam</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">Formulario de calificacion de nuestro sitio Web</h1>
+
+    <p id="descripsion">Gracias por tomarte el tiempo de ayudarnos a mejorar nuestro sitio</p>
+
+    <div id="estructura">
+
+        <!--Inicio formulario-->
+        <form id="survey-form">
+            <!--Inputs tipo texto-->
+            <label id="name-label" for="name">
+                <p>Nombre:</p>
+            </label>
+
+            <input id="name" type="text" placeholder="Ingrese su nombre" required>
+
+
+            <label id="email-label" for="email">
+                <p>Email:</p>
+            </label>
+
+            <input id="email" type="email" placeholder="Ingrese su Email" required>
+
+            <label id="number-label" for="number">
+                <p>Edad:</p>
+            </label>
+
+            <input id="number" type="number" placeholder="Ingrese su edad" min="18" max="100" required>
+            <!--Inputss tipo radio-->
+            <p>¿Como calificaria nuestro sitio Web?</p>
+
+            <input type="radio" name="calificacion" value="1">Excelente</input>
+            <br>
+            <input type="radio" name="calificacion" value="2">Muy bueno</input>
+            <br>
+            <input type="radio" name="calificacion" value="3">Bueno</input>
+            <br>
+            <input type="radio" name="calificacion" value="4">Aceptable</input>
+            <br>
+            <input type="radio" name="calificacion" value="5">Regular</input>
+            <br>
+            <input type="radio" name="calificacion" value="6">Muy Malo</input>
+            <br>
+            
+            <!--Inicio menu Drop-->
+            <label for="dropdown" id="Servicio"><br>¿Que topico lo atrajo?<br></label>
+            <br>                
+            <select id="dropdown">
+                            
+                    <option value="Tienda">Tienda</option>
+                    <option value="Servicio Tecnico">Servicio Tecnico</option>
+                    <option value="Asistencia/asesoramiento Anviz">Asistencia/asesoramiento Anviz</option>
+                            
+            </select>
+
+            <!--Checkboxes nena XD-->
+            <p>¿Que deberiamos mejorar?</p>
+                <input type="checkbox" id="Checkboxes" name="Interfaz-Navegacion" value="Interfaz-Navegacion">
+                <label for="video-length">Interfaz-Navegacion</label><br>
+        
+                <input type="checkbox" id="Checkboxes" name="Comunicacion" value="Comunicacion">
+                <label for="content-quality">Comunicacion</label><br>
+        
+                <input type="checkbox" id="Checkboxes" name="Ninguna de las anteriores" value="Ninguna de las anteriores">
+                <label for="more-videos">Ninguna de las anteriores</label><br>
+
+            <!--Area de texto-->
+            <p>sugerencia del Usuario:</p>
+
+            <textarea id="comentario" rows="4" cols="40" placeholder="Deje aqui su sugerencia."></textarea>
+             <br>
+
+            <input id="submit" type="submit" value="Enviar">
+
+
+
+        </form>
+        <!--Fin formulario-->
+      </div>
+      
+        <footer>
+        <!--footer por meme-->
+        <p>¡CTEAM NENA!</p>
+        </footer>
+    </body>
+   
+
+</html>
